@@ -1,0 +1,968 @@
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
+:root {
+    --color-1: #292929;
+    --color-2: #F6F6F6;
+    --color-3: #e5e5e5;
+    --color-4: #e5e5e579;
+    --color-5: #fff;
+    --color-6: rgb(126, 126, 126);
+    --color-7: rgb(31, 31, 31);
+    --color-8: rgba(0, 0, 0, 0.2);
+    --color-9: rgba(0, 0, 0, 0.5);
+    --color-10: rgba(0, 0, 0, 0.95);
+    --color-11: rgba(105, 105, 105, 0.6);
+    --color-12: rgba(126, 126, 126, 0.288);
+    --color-13: rgba(31, 31, 31, 0.801);
+    --color-14: rgba(31, 31, 31, 0.95);
+    --color-15: rgba(41, 41, 41, 0.712);
+    --color-16: rgba(41, 41, 41, 0.95);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden !important;
+}
+
+/* Style One */
+
+.style-one {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    overflow: hidden;
+    min-height: 100vh;
+    background-image: url('./test.jpg');
+    background-size: cover;
+    background-position: center;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-11) transparent;
+    overflow: scroll;
+}
+
+.style-one ::-webkit-scrollbar {
+    width: 5px !important;
+    background: transparent; 
+}
+
+.style-one ::-webkit-scrollbar-thumb {
+    background-color: var(--color-11);
+    border-radius: 5px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+
+@media (max-width: 768px) {
+    body.style-one {
+        overflow: auto; 
+    }
+
+    .header {
+        display: none !important;
+    }
+
+    .encapsulated {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        width: 100% !important;
+        overflow-y: auto !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .item-container {
+        flex-direction: column;
+        align-items: center;
+        overflow: visible !important;
+    }
+
+    .browser-icons {
+        justify-content: space-around;
+        padding: 0.5rem;
+    }
+
+    .small-container {
+        margin: 1rem 0;
+        width: 90%; 
+    }
+
+    .profile, .about, .skillset {
+        width: 100%;
+        margin-bottom: 0.5rem!important;
+    }
+
+    .skillset i {
+        font-size: 1.5em;
+    }
+
+    .link, .name {
+        font-size: 1.2em;
+    }
+
+    .tooltip-text {
+        font-size: 10px;
+        width: 150px;
+    }
+
+    .browser-icons a {
+        padding: 0 0.5rem;
+    }
+
+    .skillset div {
+        margin-top: 0.2rem;
+    }
+
+    .tabs-container {
+        width: fit-content !important;
+    }
+
+    .style-two .skillset {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+        display: block;
+        position: relative;
+        margin-top: 4rem !important;
+    }
+}
+
+.style-one .style-switcher {
+    display: flex;
+    position: fixed;
+    bottom: 1px;
+    left: 1px;
+}
+
+.style-one .style-tab {
+    margin: 0 0.2rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-15);
+    color: var(--color-5);
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 4px 10px 0px var(--color-9);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: relative;
+    bottom: -0.35rem;
+    left: 5px;
+}
+
+.style-one .style-tab.active {
+    background-color: var(--color-14);
+}
+
+.style-one .style-tab:hover {
+    background-color: var(--color-16);
+}
+
+
+.style-one .header {
+    width: 40rem;
+    height: 3rem;
+    background: var(--color-14);
+    color: var(--color-5);
+    text-align: center;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0px 0px 16px 0px var(--color-10);
+    margin-bottom: 1rem;
+}
+
+.style-one .container {
+    overflow: hidden;
+    width: 40rem;
+    height: 31.5rem;
+    background: var(--color-14);
+    color: var(--color-5);
+    text-align: center;
+    display: flex;
+    border-radius: 12px;
+    box-shadow: 0px 0px 16px 0px var(--color-10);
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 0;
+    justify-content: space-between;
+}
+
+.style-one .link {
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+    opacity: 0.6;
+    user-select: none;
+}
+
+.style-one #link:after {
+    content: 'Search...' !important;
+}
+
+.style-one .browser-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    padding: 1rem;
+    padding-left: 0.5rem;
+}
+
+.style-one .browser-icons a {
+    padding-left: 1rem;
+}
+
+.style-one .browser {
+    width: 100%;
+    background: var(--color-12);
+    margin: 0.6rem;
+    border-radius: 15px;
+}
+
+.style-one .item-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.style-one .small-container {
+    display: flex;
+    margin-bottom: 0 !important;
+}
+
+
+.style-one .project {
+    width: 95%;
+    height: fit-content;
+    margin: 1rem;
+    margin-bottom: 0;
+    border-radius: 25px;
+    background-color: var(--color-8);
+    box-shadow: 0px 0px 8px 0px var(--color-10);
+    display: flex;
+    text-align: left;
+}
+
+.style-one .thumbnail {
+    width: 9rem;
+    height: 10rem;
+    margin: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+    display: flex;
+    transition: all 1s ease;
+    border-radius: 25px;
+}
+
+.style-one .description {
+    max-width: 24rem;
+}
+
+.style-one .project-name {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.style-one .project-date {
+    font-style: italic;
+}
+
+.style-one .project-description {
+    font-size: 0.7em;
+}
+
+.style-one .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+    pointer-events: none; 
+    overflow-y: auto;
+}
+
+.style-one .content.active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+    pointer-events: auto; 
+}
+
+.style-one .profile {
+    border-radius: 25px;
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem;
+    background-image: url('images/pfp.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 250px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-one .skillset {
+    margin: 2rem;
+    width: 15rem;
+    display: block;
+}
+
+.style-one .make-a-change {
+    margin: 2rem;
+    width: 100%;
+    display: contents;
+}
+
+.style-one .make-a-change p {
+    font-size: 0.7em;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+.style-one .make-a-change button {
+    outline: none;
+    border: 0px solid var(--color-5);
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background: var(--color-7);
+    color: var(--color-5);
+    box-shadow: 0px 0px 10px 0px var(--color-10);
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.style-one .make-a-change button:hover {
+    transition: all 1s ease;
+    filter: brightness(1.5);
+}
+
+.style-one .tunes {
+    width: 20rem;
+    display: block;
+}
+
+.style-one .tooltip-text {
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    color: white;
+    font-size: 12px;
+    background: var(--color-13);
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 10rem;
+    pointer-events: none;
+    transition: opacity 1s;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.style-one .tool:after {
+    content: ' @こぴぺーすと';
+}
+
+.style-one .dot {
+    display: none;
+}
+
+.style-one .about {
+    margin: 2rem 0rem 0rem 0rem;
+    width: 19rem;
+    height: 15rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.style-one #name::before {
+    content: 'Name: ';
+    font-weight: bold;
+}
+
+.style-one #info::before {
+    content: 'Age: ';
+    font-weight: bold;
+}
+
+.style-one #pronouns::before {
+    content: 'Pronouns: ';
+    font-weight: bold;
+}
+
+.style-one #about::before {
+    content: 'About: ';
+    font-weight: bold;
+}
+
+.style-one #about::after {
+    content: "Hey! I'm a freelancer with six years of experience, blending self-taught skills with formal computer science studies. While pursuing my degree, I'm also diving into hands-on projects. Loving this journey of learning and applying!";
+}
+
+.style-one .extra {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.5s ease;
+    transform: translateX(-100%);
+    display: inline-block;
+    pointer-events: none;
+}
+
+.style-one .small-extra {
+    font-size: 0.7em;
+}
+
+.style-one #pronouns:hover .extra {
+    opacity: 0.6;
+    transform: translateX(0);
+    transition: opacity 1s ease, transform 0.5s ease;
+}
+
+.style-one #info:hover .extra {
+    opacity: 0.6;
+    transform: translateX(0);
+    transition: opacity 1s ease, transform 0.5s ease;
+}
+
+
+.style-one .name {
+    font-size: 2em;
+}
+
+
+.style-one hr.solid {
+    border: var(--color-6) solid 1px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.style-one a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.style-one #title {
+    display: none;
+}
+
+.style-one .about p {
+    margin: 0;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.style-one .skillset i {
+    font-size: 2em;
+    letter-spacing: 7px;
+    opacity: 0.6;
+    transition: opacity 1s ease;
+}
+
+.style-one .skillset i:hover {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.style-one .skillset div {
+    margin-top: 0.5rem;
+}
+
+.style-one .tabs-container {
+    display: flex;
+    width: 40rem;
+    z-index: 10;
+    left: 0.5rem;
+    top: -0.4rem;
+    position: relative;
+}
+
+.style-one .tab {
+    margin: 0 0.2rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-15);
+    color: var(--color-5);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 4px 10px 0px var(--color-9);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: relative;
+    bottom: -0.35rem;
+    left: 5px;
+}
+
+.style-one .tab.active {
+    background-color: var(--color-14);
+}
+
+.style-one .tab:hover {
+    background-color: var(--color-16);
+}
+
+.style-one .content.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+.style-one .content.fade-out {
+    animation: fadeOut 0.5s ease;
+}
+
+/* Style one end */
+
+/* Style two */
+
+.style-two {
+    background-image: none !important;
+    background-color: var(--color-2) !important;
+    font-family: "Times New Roman", Times, serif;
+    min-height: 100vh;
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+    overflow: scroll;
+}
+
+.style-two ::-webkit-scrollbar {
+    width: 5px !important;
+    background: transparent; 
+}
+
+.style-two ::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 5px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.style-two .style-switcher {
+    display: flex;
+    position: fixed;
+    bottom: 1px;
+    left: 1px;
+}
+
+.style-two .style-tab {
+    margin: 0 0.2rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    cursor: pointer;
+    transition: background-color 1s;
+    position: relative;
+    bottom: -0.35rem;
+    left: 5px;
+    border: 2px solid var(--color-1);
+    font-style:italic;
+}
+
+.style-two .style-tab.active {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+.style-two .style-tab:hover {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+.style-two .header {
+    width: 40rem;
+    height: 3rem;
+    background: var(--color-3)79;
+    color: var(--color-1);
+    border: 2px solid var(--color-1);
+    text-align: right;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.style-two .browser-icons {
+    display: none;
+}
+
+.style-two .browser {
+    width: 100%;
+    margin: 1rem;
+}
+
+.style-two #link:after {
+    content: 'Searching for purpose...' !important;
+    font-style: italic;
+    margin-right: 2rem;
+}
+
+.style-two .container {
+    overflow: hidden;
+    width: 40rem;
+    height: 31.5rem;
+    background: var(--color-3)79;
+    color: var(--color-1);
+    border: 2px solid var(--color-1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 0;
+    justify-content: space-between;
+}
+
+.style-two .item-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.style-two .profile {
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem;
+    background-image: url('images/dark.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(1);
+}
+
+.style-two .about {
+    margin: 2rem 0rem 0rem 0rem;
+    width: 19rem;
+    height: 10rem;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-style: italic;
+}
+
+.style-two #title {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.style-two .ex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.style-two #title::after {
+    content: 'SELF.';
+    margin-right: 1rem;
+}
+
+.style-two #name::after {
+    content: '';
+    margin-right: 1rem;
+}
+
+.style-two #info::before {
+    content: '';
+    margin-left: 1rem;
+}
+
+.style-two #info::after {
+    content: '';
+    margin-right: 1rem;
+}
+
+.style-two #pronouns::before {
+    content: '';
+    font-weight: bold;
+}
+
+.style-two #about {
+    text-align: center;
+}
+
+.style-two #about::after {
+    content: "Freelancer • Six years of experience • Self-taught • Pursuing a degree in computer science";
+}
+
+.style-two #tunebox {
+    display: none;
+}
+
+.style-two .about p {
+    margin-top: 0;
+}
+
+.style-two .about p:not(#name, #info) {
+    margin-top: 0.5rem;
+}
+
+.style-two .skillset {
+    margin: 0rem 1rem 1rem 1rem;
+    padding: 0rem 6rem 0rem 6rem;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.style-two .skillset .title {
+    font-size: 3em;
+    font-style: italic;
+    padding: 0;
+    margin: 0rem 1rem 1rem 1rem;
+}
+
+.style-two .skillset i {
+    color: var(--color-1);
+    font-size: 2em;
+    letter-spacing: 7px;
+    opacity: 1;
+}
+
+.style-two .skillset div {
+    margin-top: 0.5rem;
+    display: contents;
+}
+
+.style-two .tooltip-text {
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    width: fit-content;
+    color: var(--color-1);
+    font-size: 12px;
+    background: var(--color-3);
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 10rem;
+    pointer-events: none;
+    transition: opacity 1s;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-style: italic;
+    border: 2px solid var(--color-1);
+}
+
+.style-two .tool:after {
+    content: ' Ruri Dragon';
+}
+
+.style-two .tabs-container {
+    display: flex;
+    width: 40rem;
+    z-index: 10;
+    left: 0.5rem;
+    top: -0.35rem;
+    position: relative;
+}
+
+.style-two .tab {
+    margin: 0 0.2rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-2);
+    border: 2px solid var(--color-1);
+    border-top: 0px;
+    color: var(--color-1);
+    cursor: pointer;
+    transition: background-color 1s;
+    position: relative;
+    bottom: -0.37rem;
+    left: 5px;
+    font-style: italic;
+}
+
+.style-two .tab.active {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+.style-two .tab:hover {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+.style-two .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+    overflow-y: auto;
+    pointer-events: none;
+}
+
+.style-two .content.active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+    pointer-events: auto;
+}
+
+.style-two .content.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+.style-two .content.fade-out {
+    animation: fadeOut 0.5s ease;
+}
+
+.style-two .project {
+    width: 95%;
+    height: fit-content;
+    margin: 1rem;
+    margin-bottom: 0;
+    border: 2px solid var(--color-1);
+    display: flex;
+    text-align: left;
+}
+
+.style-two .thumbnail {
+    width: 9rem;
+    height: 10rem;
+    margin: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+    border: 2px solid var(--color-1);
+    display: flex;
+    filter: grayscale(1);
+    transition: all 1s ease;
+}
+
+.style-two .thumbnail:hover {
+    filter: grayscale(0) !important;
+}
+
+.style-two .description {
+    max-width: 24rem;
+}
+
+.style-two .project-name {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.style-two .project-date {
+    font-style: italic;
+}
+
+.style-two .project-description {
+    font-size: 0.8em;
+}
+
+.style-two .make-a-change {
+    margin: 2rem;
+    width: 100%;
+    display: contents;
+}
+
+.style-two .make-a-change p {
+    font-size: 0.8em;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+.style-two .make-a-change button {
+    outline: none;
+    border: 1px solid var(--color-1);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background: var(--color-7);
+    color: var(--color-2);
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+/* Style two end */
+
+/* Animations */
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideToLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+@keyframes slideToRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200%);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideOutToRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+}
