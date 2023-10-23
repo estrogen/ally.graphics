@@ -10,7 +10,7 @@ Welcome to the repository for my personal website! This site serves as a digital
 ## To-Do
 
 - [ ] Add more potential styles for the website.
-- [ ] 🚧 Dynamically import my projects from a json file.
+- [x] Dynamically import my projects from a json file.
 - [ ] 🚧 Implement a contact form for easier communication.
 - [x] Optimize for mobile responsiveness.
 
