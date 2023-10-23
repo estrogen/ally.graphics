@@ -1,0 +1,25 @@
+{
+    "projects": [
+        {
+            "href": "https://streamable.com/boq0wo",
+            "thumbnail": "images/mining.png",
+            "name": "Farming & Mining Macro",
+            "date": "January 2022 - Present",
+            "description": "Harness Java-powered automation for mining and farming in Minecraft. This mod lets users record movements for genuine, human-like actions. Mine and farm hands-free, avoiding detection with naturally mimicked behaviors."
+        },
+        {
+            "href": "https://streamable.com/p8d1rf",
+            "thumbnail": "images/gm.png",
+            "name": "Maplestory Anti-GM",
+            "date": "February 2021 - January 2023 (Completed)",
+            "description": "Collaborating with a colleague on an innovative project, we devised a solution in Python to automate a game's anti-bot system. Using OpenAI technology, our approach was responsive and effectively bypassed the game's measures."
+        },
+        {
+            "href": "",
+            "thumbnail": "images/wf.gif",
+            "name": "Warframe Clan Management Bot",
+            "date": "April 2019 - Present",
+            "description": "Designed and implemented a Discord bot using Node.js, JavaScript, and MongoDB tailored for Warframe clan management. The bot proficiently administered 8+ distinct clans, autonomously managing incoming users and distinct staff teams within each clan. Beyond user management, it also seamlessly handled the unique economy systems of each clan, ensuring members were aptly rewarded for their contributions. This multifaceted tool significantly streamlined operations and enhanced coordination and reward distribution across all clans."
+        }
+    ]
+}
