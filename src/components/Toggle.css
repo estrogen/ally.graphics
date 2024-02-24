@@ -1,0 +1,62 @@
+:root {
+    --toggle-shadow: 0px 0px 0.5rem rgba(254, 167, 0, 0.7);
+}  
+
+.toggle-container {
+    width: 25px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50px 0 0 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    filter: drop-shadow(var(--toggle-shadow)); 
+    transform: rotate(90deg);
+}
+
+.toggle-image {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -50%) rotate(-45deg);
+}
+
+.dark {
+    --toggle-shadow: 0px 0px 0.5rem rgba(31, 36, 140, 0.7);
+}
+
+.dark .toggle-image {
+    animation: Dark-mode-rotate 0.7s ease forwards;
+}
+
+.toggle-container:not(.dark) .toggle-image {
+    animation: light-mode-rotate 0.7s ease forwards;
+}
+
+@keyframes Dark-mode-rotate {
+    0% {
+        transform: translate(-25%, -50%) rotate(-45deg);
+    }
+    50% {
+        transform: translate(-25%, -50%) rotate(155deg);
+    }
+    100% {
+        transform: translate(-25%, -50%) rotate(135deg);
+    }
+}
+
+@keyframes light-mode-rotate {
+    0% {
+        transform: translate(-25%, -50%) rotate(135deg);
+    }
+    50% {
+        transform: translate(-25%, -50%) rotate(335deg);
+    }
+    100% {
+        transform: translate(-25%, -50%) rotate(315deg);
+    }
+}
