@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.e031613d.css",
-    "main.js": "/static/js/main.b4403258.js",
+    "main.js": "/static/js/main.f0726803.js",
     "static/media/luna.png": "/static/media/luna.ee1bc1e05c661038f6a7.png",
     "static/media/gm.png": "/static/media/gm.9c8d90b24f1e1176bcc3.png",
     "static/media/mining.png": "/static/media/mining.ccc6322e26933aca41fd.png",
     "static/media/day-and-night.png": "/static/media/day-and-night.670bf5e855d5ac3760d4.png",
     "index.html": "/index.html",
     "main.e031613d.css.map": "/static/css/main.e031613d.css.map",
-    "main.b4403258.js.map": "/static/js/main.b4403258.js.map"
+    "main.f0726803.js.map": "/static/js/main.f0726803.js.map"
   },
   "entrypoints": [
     "static/css/main.e031613d.css",
-    "static/js/main.b4403258.js"
+    "static/js/main.f0726803.js"
   ]
 }
